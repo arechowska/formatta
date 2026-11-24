@@ -155,7 +155,43 @@ html{scroll-behavior:smooth}
 </section>
 <section>
   <h2>What it does</h2>
-  <ul><li><b>Assemble</b> a document from your sources by a template. Missing facts become visible gaps, not guesses.</li><li><b>Check</b> an existing document against the template.</li><li><b>Convert</b> to DOCX, PDF, HTML or Markdown without rewriting the content.</li></ul>
+  <ul><li><b>Assemble</b> a document from your sources by a template. Missing facts become visible gaps, not guesses.</li><li><b>Check</b> an existing document against the template.</li><li><b>Convert</b> to another format without rewriting the content.</li></ul>
+  <div class="diagram" role="img" aria-label="Your sources and a template go into Formatta, which assembles, checks and converts; the result is your document with gaps marked, not invented">
+    <svg viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13">
+      <defs>
+        <marker id="fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="var(--accent)"/></marker>
+      </defs>
+      <g fill="var(--text)">
+        <text x="10" y="76" font-weight="600" font-family="-apple-system,Segoe UI,Roboto,Arial,sans-serif" font-size="15">Your sources</text>
+      </g>
+      <g fill="var(--muted)">
+        <text x="10" y="160" fill="var(--text)" font-weight="600" font-family="-apple-system,Segoe UI,Roboto,Arial,sans-serif" font-size="15">Template</text>
+        <text x="10" y="184">what the document</text>
+        <text x="10" y="202">must say</text>
+      </g>
+      <g stroke="var(--accent)" stroke-width="1.5" fill="none" marker-end="url(#fa)">
+        <path d="M120 72 C 200 72, 230 110, 270 110"/>
+        <path d="M150 175 C 210 175, 230 130, 270 130"/>
+      </g>
+      <rect x="275" y="60" width="200" height="120" rx="4" fill="var(--band)"/>
+      <g fill="var(--text)">
+        <text x="295" y="90" font-weight="600" font-family="-apple-system,Segoe UI,Roboto,Arial,sans-serif" font-size="15">Formatta</text>
+      </g>
+      <g fill="var(--muted)">
+        <text x="295" y="118">assemble</text>
+        <text x="295" y="140">check</text>
+        <text x="295" y="162">convert</text>
+      </g>
+      <g stroke="var(--accent)" stroke-width="1.5" fill="none" marker-end="url(#fa)">
+        <path d="M475 120 L535 120"/>
+      </g>
+      <g fill="var(--text)">
+        <text x="545" y="100" font-weight="600" font-family="-apple-system,Segoe UI,Roboto,Arial,sans-serif" font-size="15">Your document</text>
+        <text x="545" y="132" fill="var(--wine)" font-weight="600">gaps marked,</text>
+        <text x="545" y="150" fill="var(--wine)" font-weight="600">not invented</text>
+      </g>
+    </svg>
+  </div>
 </section>
 <section>
   <h2>What was hard</h2>

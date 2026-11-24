@@ -114,6 +114,14 @@ main li{margin:0 0 6px}
   h2{font-size:24px}
   h1{font-size:32px}
 }
+/*nav2*/
+:root{--wine:#6e2333}
+@media (prefers-color-scheme: dark){:root{--wine:#e39aa6}}
+nav .name{color:var(--wine);font-size:18px;letter-spacing:-.01em}
+nav a:not(.name){padding:4px 10px;border-radius:999px;transition:background .15s,color .15s}
+nav a:not(.name):hover,nav a[aria-current]{background:var(--accent-soft);color:var(--accent)}
+nav .wrap{gap:8px}
+@media(max-width:600px){nav .wrap{gap:0;padding:0 12px;justify-content:space-between}nav a:not(.name){padding:4px 6px;font-size:13.5px}}
 </style>
 </head>
 <body>

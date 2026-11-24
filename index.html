@@ -124,7 +124,7 @@ nav .wrap{gap:8px}
 @media(max-width:600px){nav .wrap{gap:0;padding:0 12px;justify-content:space-between}nav a:not(.name){padding:4px 6px;font-size:13.5px}}
 /*top*/
 html{scroll-behavior:smooth}
-.totop{position:fixed;right:20px;bottom:20px;width:44px;height:44px;border-radius:50%;border:0;background:var(--accent-soft);color:var(--accent);font-size:20px;line-height:44px;text-align:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.totop{position:fixed;right:20px;bottom:20px;width:44px;height:44px;border-radius:50%;border:0;padding:0;margin:0;-webkit-appearance:none;appearance:none;display:flex;align-items:center;justify-content:center;background:var(--accent-soft);color:var(--accent);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s;box-shadow:0 1px 4px rgba(0,0,0,.08)}
 .totop.show{opacity:.9;pointer-events:auto}
 .totop:hover{opacity:1}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
@@ -206,7 +206,7 @@ html{scroll-behavior:smooth}
 </main>
 <footer><div class="wrap">© 2026 Ina Arechowska</div></footer>
 <script data-goatcounter="https://ina.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-<button class="totop" aria-label="Back to top" title="Back to top" onclick="window.scrollTo({top:0})">↑</button>
+<button class="totop" aria-label="Back to top" title="Back to top" onclick="window.scrollTo({top:0})"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 <script>(function(){var b=document.querySelector('.totop');function f(){b.classList.toggle('show',window.scrollY>600)}window.addEventListener('scroll',f,{passive:true});f();})();</script>
 </body>
 </html>

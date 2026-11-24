@@ -150,8 +150,18 @@ html{scroll-behavior:smooth}
   <p>FAQs, use cases and release notes are written the same way again and again: collect facts from several files, fit them into a structure, find what is missing, format, and redo it for another format. A chat model writes a text once, but it doesn’t keep sources, doesn’t check against requirements and fills gaps with inventions.</p>
 </section>
 <section>
+  <h2>What it’s for</h2>
+  <ul><li>Release notes from tickets and commits.</li><li>FAQ from support answers.</li><li>Use cases from requirements.</li><li>Specifications in the company template.</li></ul>
+</section>
+<section>
   <h2>What it does</h2>
   <ul><li><b>Assemble</b> a document from your sources by a template. Missing facts become visible gaps, not guesses.</li><li><b>Check</b> an existing document against the template.</li><li><b>Convert</b> to DOCX, PDF, HTML or Markdown without rewriting the content.</li></ul>
+</section>
+<section>
+  <h2>What was hard</h2>
+  <div class="dec"><h3>Local models limit the chat</h3><dl><dt>What</dt><dd>They are slower and keep less context than cloud models, so editing through chat works best with short, specific requests, not a long free conversation.</dd></dl></div>
+  <div class="dec"><h3>Our own editor</h3><dl><dt>What</dt><dd>A document has to keep its structure while you edit it by hand and through chat. Building that took more time than connecting the models.</dd></dl></div>
+  <div class="dec"><h3>Three people, one screen</h3><dl><dt>What</dt><dd>At first we didn’t split the work by feature. We changed the same screens, and one person’s work overwrote another’s in shared places, such as the actions behind one button.</dd><dt>Helped</dt><dd>Splitting the work by feature, so each part had one owner.</dd></dl></div>
 </section>
 <section>
   <h2>Timeline</h2>
